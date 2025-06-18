@@ -20,7 +20,7 @@ button.addEventListener("click", () => {
           let result = number * 2;
           output.innerText = `Result: ${result}`;
           resolve(result);
-        }, 3000);
+        }, 1000);
       });
     })
     .then((result) => {
@@ -29,7 +29,7 @@ button.addEventListener("click", () => {
           let res = result - 3;
           output.innerText = `Result: ${res}`;
           resolve(res);
-        }, 4000);
+        }, 1000);
       });
     })
     .then((res) => {
@@ -38,13 +38,13 @@ button.addEventListener("click", () => {
                 let result = res / 2;
                 output.innerText = `Result: ${result}`;
                 resolve(result);
-            },5000)
+            },1000)
         })
     })
     .then((result) =>{
         setTimeout(()=>{
             let res= result + 10;
             output.innerText = `Final Result: ${res}`;
-        },6000)
+        },1000)
     })
 });
